@@ -25,7 +25,7 @@ def main():
 
     if not filtered_movies.empty:
         st.write(f"Movies in the genre: {selected_genre}")
-        st.write(filtered_movies[['id', 'title', 'year', 'genres']])
+        st.write(filtered_movies[['title', 'year', 'genres']])
     else:
         st.write(f"No movies found for the genre: {selected_genre}")
 
