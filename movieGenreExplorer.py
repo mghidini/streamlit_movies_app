@@ -20,7 +20,7 @@ def main():
     genres = get_unique_genres(df)
 
     selected_genre = st.selectbox("Select Genre", genres)
-e
+    
     filtered_movies = df[df['genres'].str.contains(selected_genre, case=False, na=False)]
 
     if not filtered_movies.empty:
