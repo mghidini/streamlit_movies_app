@@ -25,7 +25,7 @@ def main():
 
     if not filtered_movies.empty:
         st.subheader(f"Movies in {selected_genre} Genre")
-        st.dataframe(filtered_movies['title', 'year'])
+        st.dataframe(filtered_movies[['title', 'year']])
     else:
         st.write(f"No movies found for the genre: {selected_genre}")
 
