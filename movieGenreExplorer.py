@@ -24,8 +24,8 @@ def main():
     filtered_movies = df[df['genres'].str.contains(selected_genre, case=False, na=False)]
 
     if not filtered_movies.empty:
-        st.write(f"Movies in the genre: {selected_genre}")
-        st.write(filtered_movies[['title', 'year', 'genres']])
+        st.subheader(f"Movies in {selected_genre} Genre")
+        st.dataframe(filtered_movies['title', 'year'])
     else:
         st.write(f"No movies found for the genre: {selected_genre}")
 
